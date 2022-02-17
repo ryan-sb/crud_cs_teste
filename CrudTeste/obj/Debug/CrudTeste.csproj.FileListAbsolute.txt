@@ -1,0 +1,11 @@
+C:\Users\ryanb\Documents\Projects C#\PrimeiroPrograma\CrudTeste\CrudTeste\bin\Debug\CrudTeste.exe.config
+C:\Users\ryanb\Documents\Projects C#\PrimeiroPrograma\CrudTeste\CrudTeste\bin\Debug\CrudTeste.exe
+C:\Users\ryanb\Documents\Projects C#\PrimeiroPrograma\CrudTeste\CrudTeste\bin\Debug\CrudTeste.pdb
+C:\Users\ryanb\Documents\Projects C#\PrimeiroPrograma\CrudTeste\CrudTeste\obj\Debug\CrudTeste.csproj.AssemblyReference.cache
+C:\Users\ryanb\Documents\Projects C#\PrimeiroPrograma\CrudTeste\CrudTeste\obj\Debug\CrudTeste.csproj.SuggestedBindingRedirects.cache
+C:\Users\ryanb\Documents\Projects C#\PrimeiroPrograma\CrudTeste\CrudTeste\obj\Debug\CrudTeste.Form1.resources
+C:\Users\ryanb\Documents\Projects C#\PrimeiroPrograma\CrudTeste\CrudTeste\obj\Debug\CrudTeste.Properties.Resources.resources
+C:\Users\ryanb\Documents\Projects C#\PrimeiroPrograma\CrudTeste\CrudTeste\obj\Debug\CrudTeste.csproj.GenerateResource.cache
+C:\Users\ryanb\Documents\Projects C#\PrimeiroPrograma\CrudTeste\CrudTeste\obj\Debug\CrudTeste.csproj.CoreCompileInputs.cache
+C:\Users\ryanb\Documents\Projects C#\PrimeiroPrograma\CrudTeste\CrudTeste\obj\Debug\CrudTeste.exe
+C:\Users\ryanb\Documents\Projects C#\PrimeiroPrograma\CrudTeste\CrudTeste\obj\Debug\CrudTeste.pdb
