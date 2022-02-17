@@ -25,7 +25,6 @@ namespace CrudTeste
             // TODO: This line of code loads data into the 'crudProdutosDataSet.Produtos' table. You can move, or remove it, as needed.
             this.produtosTableAdapter.Fill(this.crudProdutosDataSet.Produtos);
         
-
         }
 
         SqlConnection conexao = new SqlConnection(@"Data Source=DESKTOP-4AQ126F\SQLEXPRESS;Initial Catalog=CrudProdutos;Integrated Security=True");
@@ -48,61 +47,71 @@ namespace CrudTeste
         private void bt_inserir_Click(object sender, EventArgs e)
         {
 
-            conexao.Open();
+                conexao.Open();
 
-            SqlCommand comando = new SqlCommand("insert into Produtos values (@id, @nome_produto, @preco_produto);", conexao);
-            
-            comando.Parameters.AddWithValue("@id", int.Parse(id_prod.Text));
-            comando.Parameters.AddWithValue("@nome_produto", nome_prod.Text);
-            comando.Parameters.AddWithValue("@preco_produto", preco_prod.Text);
-            comando.ExecuteNonQuery();        
-            
-            conexao.Close();
+                SqlCommand comando = new SqlCommand("insert into Produtos values (@id, @nome_produto, @preco_produto);", conexao);
 
-            Carrega_dados();
+                comando.Parameters.AddWithValue("@id", int.Parse(id_prod.Text));
+                comando.Parameters.AddWithValue("@nome_produto", nome_prod.Text);
+                comando.Parameters.AddWithValue("@preco_produto", preco_prod.Text);
+                comando.ExecuteNonQuery();
 
-            MessageBox.Show("Produto inserido com sucesso");
+                conexao.Close();
+
+                Carrega_dados();
+
+                MessageBox.Show("Produto inserido com sucesso");
             
         }
 
         private void bt_atualizar_Click(object sender, EventArgs e)
         {
+            if (id_prod.Text == "")
+            {
+                MessageBox.Show("Preencha o campo 'ID Produto' para atualizar o produto desejado.");
+            }
+            else
+            {
+                conexao.Open();
 
-            conexao.Open();
+                SqlCommand comando = new SqlCommand("update Produtos set nome_produto = @nome_produto, preco_produto = @preco_produto where ID=@id;", conexao);
 
-            SqlCommand comando = new SqlCommand("update Produtos set nome_produto = @nome_produto, preco_produto = @preco_produto where ID=@id;", conexao);
-            
-            comando.Parameters.AddWithValue("@id", int.Parse(id_prod.Text));
-            comando.Parameters.AddWithValue("@nome_produto", nome_prod.Text);
-            comando.Parameters.AddWithValue("@preco_produto", preco_prod.Text);
-            comando.ExecuteNonQuery();
-            
-            conexao.Close();
+                comando.Parameters.AddWithValue("@id", int.Parse(id_prod.Text));
+                comando.Parameters.AddWithValue("@nome_produto", nome_prod.Text);
+                comando.Parameters.AddWithValue("@preco_produto", preco_prod.Text);
+                comando.ExecuteNonQuery();
 
-            Carrega_dados();
+                conexao.Close();
 
-            MessageBox.Show("Produto atualizado com sucesso");
+                Carrega_dados();
 
+                MessageBox.Show("Produto atualizado com sucesso");
+            }
         }
 
         private void bt_remover_Click(object sender, EventArgs e)
         {
+            if (id_prod.Text == "")
+            {
+                MessageBox.Show("Preencha o campo 'ID Produto' para Deletar o produto desejado.");
+            }
+            else
+            {
+                conexao.Open();
 
-            conexao.Open();
+                SqlCommand comando = new SqlCommand("delete Produtos where ID=@id;", conexao);
 
-            SqlCommand comando = new SqlCommand("delete Produtos where ID=@id;", conexao);
-            
-            comando.Parameters.AddWithValue("@id", int.Parse(id_prod.Text));
-            comando.Parameters.AddWithValue("@nome_produto", nome_prod.Text);
-            comando.Parameters.AddWithValue("@preco_produto", preco_prod.Text);
-            comando.ExecuteNonQuery();
-            
-            conexao.Close();
+                comando.Parameters.AddWithValue("@id", int.Parse(id_prod.Text));
+                comando.Parameters.AddWithValue("@nome_produto", nome_prod.Text);
+                comando.Parameters.AddWithValue("@preco_produto", preco_prod.Text);
+                comando.ExecuteNonQuery();
 
-            Carrega_dados();
+                conexao.Close();
 
-            MessageBox.Show("Produto deletado com sucesso");
+                Carrega_dados();
 
+                MessageBox.Show("Produto deletado com sucesso");
+            }
         }
     }
 }

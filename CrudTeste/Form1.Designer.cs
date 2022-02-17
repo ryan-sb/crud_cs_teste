@@ -48,6 +48,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.id_prod = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.crudProdutosDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -60,7 +61,7 @@
             this.bt_inserir.BackColor = System.Drawing.SystemColors.HotTrack;
             this.bt_inserir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_inserir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bt_inserir.Location = new System.Drawing.Point(170, 185);
+            this.bt_inserir.Location = new System.Drawing.Point(170, 209);
             this.bt_inserir.Name = "bt_inserir";
             this.bt_inserir.Size = new System.Drawing.Size(106, 38);
             this.bt_inserir.TabIndex = 1;
@@ -73,7 +74,7 @@
             this.bt_atualizar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.bt_atualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_atualizar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bt_atualizar.Location = new System.Drawing.Point(282, 185);
+            this.bt_atualizar.Location = new System.Drawing.Point(282, 209);
             this.bt_atualizar.Name = "bt_atualizar";
             this.bt_atualizar.Size = new System.Drawing.Size(106, 38);
             this.bt_atualizar.TabIndex = 2;
@@ -86,7 +87,7 @@
             this.bt_remover.BackColor = System.Drawing.SystemColors.HotTrack;
             this.bt_remover.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_remover.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bt_remover.Location = new System.Drawing.Point(394, 185);
+            this.bt_remover.Location = new System.Drawing.Point(394, 209);
             this.bt_remover.Name = "bt_remover";
             this.bt_remover.Size = new System.Drawing.Size(106, 38);
             this.bt_remover.TabIndex = 3;
@@ -111,11 +112,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(48, 90);
+            this.label1.Location = new System.Drawing.Point(48, 114);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 18);
+            this.label1.Size = new System.Drawing.Size(111, 17);
             this.label1.TabIndex = 6;
             this.label1.Text = "Nome Produto";
             // 
@@ -128,7 +129,7 @@
             this.nomeprodutoDataGridViewTextBoxColumn,
             this.preco_produto});
             this.dataGridView1.DataSource = this.produtosBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(170, 252);
+            this.dataGridView1.Location = new System.Drawing.Point(170, 276);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(330, 172);
             this.dataGridView1.TabIndex = 7;
@@ -173,10 +174,10 @@
             this.nome_prod.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.nome_prod.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nome_prod.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nome_prod.Location = new System.Drawing.Point(170, 82);
+            this.nome_prod.Location = new System.Drawing.Point(170, 110);
             this.nome_prod.Multiline = true;
             this.nome_prod.Name = "nome_prod";
-            this.nome_prod.Size = new System.Drawing.Size(330, 35);
+            this.nome_prod.Size = new System.Drawing.Size(330, 26);
             this.nome_prod.TabIndex = 8;
             // 
             // preco_prod
@@ -184,20 +185,20 @@
             this.preco_prod.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.preco_prod.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.preco_prod.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.preco_prod.Location = new System.Drawing.Point(170, 123);
+            this.preco_prod.Location = new System.Drawing.Point(170, 151);
             this.preco_prod.Multiline = true;
             this.preco_prod.Name = "preco_prod";
-            this.preco_prod.Size = new System.Drawing.Size(330, 35);
+            this.preco_prod.Size = new System.Drawing.Size(330, 26);
             this.preco_prod.TabIndex = 10;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(48, 131);
+            this.label2.Location = new System.Drawing.Point(48, 155);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 18);
+            this.label2.Size = new System.Drawing.Size(112, 17);
             this.label2.TabIndex = 9;
             this.label2.Text = "Preço Produto";
             // 
@@ -206,22 +207,33 @@
             this.id_prod.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.id_prod.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.id_prod.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.id_prod.Location = new System.Drawing.Point(170, 43);
+            this.id_prod.Location = new System.Drawing.Point(170, 71);
             this.id_prod.Multiline = true;
             this.id_prod.Name = "id_prod";
-            this.id_prod.Size = new System.Drawing.Size(330, 35);
+            this.id_prod.Size = new System.Drawing.Size(330, 26);
             this.id_prod.TabIndex = 12;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(75, 51);
+            this.label3.Location = new System.Drawing.Point(75, 75);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 18);
+            this.label3.Size = new System.Drawing.Size(85, 17);
             this.label3.TabIndex = 11;
             this.label3.Text = "ID Produto";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(178, 23);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(314, 24);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "CRUD Teste - Produtos Mercado";
             // 
             // Form1
             // 
@@ -229,6 +241,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(652, 467);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.id_prod);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.preco_prod);
@@ -273,6 +286,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeprodutoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn preco_produto;
+        private System.Windows.Forms.Label label4;
     }
 }
 
